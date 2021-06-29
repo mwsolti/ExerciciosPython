@@ -1,0 +1,18 @@
+
+Tipos de campos
+
+Os principais tipos de campos são:
+
+1. CharField: utilizado para armazenar textos curtos. É obrigatório especificar o atributo max_length (tamanho máximo dos valores a serem armazenados)
+
+2. IntegerField: utilizado para armazenar valores inteiros e para validar os valores inseridos no formulário.
+
+3. TextField: semelhante ao CharField, é utilizado para armazenar textos longos. Você pode informar o parâmetro max_lenght, mas esse valor servirá somente para limitar o tamanho do textarea no formulário e não influenciará no tamanho do campo no banco de dados.
+
+4. DateField: usado para armazenar datas. É convertido em um objeto do tipo datetime.date. Seus parâmetros são mutuamente exclusivos, ou seja, você pode declarar somente um. Eles são o auto_now=True para definir sempre o valor como a data atual, o auto_now_add para setar a data que o modelo será criado (no auto_now=True ele poderá ser atualizado se editado, por exemplo) e o default que apresentará um campo para que o usuário possa informa-la.
+
+5. DateTimeField: semelhante ao DateField, serve para armazenar a data e a hora. É convertido em um objeto do tipo datetime.datetime.
+
+6. EmailField: serve para armazenar e validar um endereço de e-mail. Tem como max_length padrão 100.
+
+7. AutoField: serve para gerar um valor automático. É um tipo especial de IntegerField que automaticamente incrementa um número ao valor anterior. Se não informado o valor assumido é a chave primária da tabela.
