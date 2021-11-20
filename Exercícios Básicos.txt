@@ -21,3 +21,76 @@
 10 - Faça um Programa que leia 4 notas, mostre as notas e a média na tela.
 11 - Faça um Programa que leia um vetor de 10 caracteres, e diga quantas consoantes foram lidas. Imprima as consoantes.
 12 - Faça um Programa que leia 20 números inteiros e armazene-os num vetor. Armazene os números pares no vetor PAR e os números IMPARES no vetor impar. Imprima os três vetores.
+
+
+
+---------------------------------
+
+Resoluções
+
+# Exercicio 1
+# n1 = int(input("Digite Um Numero: \n"))
+
+# n2 = int(input("Digite Outro Numero: \n"))
+
+# if (n1 > n2):
+
+#     print (str(n1) + " É Maior Que: "+str(n2))
+
+# elif(n1==n2):
+
+#     print("Os NUmeros São Iguais")
+
+# else:
+#     print (str(n2) + " É Maior Que: "+str(n1))
+
+
+
+# Exercicio 2
+
+# valor = int(input("Sigite Um Valor"))
+
+# if (valor < 0):
+#     print("O Valor é Negatico")
+
+# elif (valor == 0):
+#     print("O Valor é ZERO")
+
+# else:
+#     print ("O Valor Positivo")
+
+#Exercicio 3
+# dict_sexo = {"F":"F - Feminino", "M": "M - Marculino", "T":"Trans"}
+# letra = input("Digite F ou M: \n")
+# lista = list(dict_sexo.keys() )
+
+# if letra not in lista :
+#     print("Letra Inexistente")
+# else:
+#     print(dict_sexo[letra])
+
+# #Exercicio 4
+# vogais = "AEIOU"
+# print (vogais)
+
+# n_pode = "0123456789-"
+# cons = "BCDFGJKLMNPQRSTVWXZ "
+
+# letra = input("Digite uma Letra").upper()
+
+# cont = 0
+
+# for l in letra:
+#     cont += 1
+
+# if cont >1:
+#     print("Você Digitou Mais de uMa Letra")
+
+# else:
+#     if (letra not in vogais) and (letra not in n_pode):
+#         print("Letra é uma consoante")
+#     elif (letra  not in cons) and (letra not in n_pode):
+#         print("Letra é uma Vogal")
+#     else:
+#         print("Isto Não é Uma Letra")
+
