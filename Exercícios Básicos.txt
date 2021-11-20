@@ -1,0 +1,23 @@
+1 - Faça um Programa que peça dois números e imprima o maior deles.
+2 - Faça um Programa que peça um valor e mostre na tela se o valor é positivo ou negativo.
+3 - Faça um Programa que verifique se uma letra digitada é "F" ou "M". Conforme a letra escrever: F - Feminino, M - Masculino, Sexo Inválido.
+4 - Faça um Programa que verifique se uma letra digitada é vogal ou consoante.
+
+---------------
+
+5 - Faça um programa que peça uma nota, entre zero e dez. Mostre uma mensagem caso o valor seja inválido e continue pedindo até que o usuário informe um valor válido.
+6 - Faça um programa que leia um nome de usuário e a sua senha e não aceite a senha igual ao nome do usuário, mostrando uma mensagem de erro e voltando a pedir as informações.
+7 - Faça um programa que leia e valide as seguintes informações:
+  Nome: maior que 3 caracteres;
+  Idade: entre 0 e 150;
+  Salário: maior que zero;
+  Sexo: 'f' ou 'm';
+  Estado Civil: 's', 'c', 'v', 'd';
+
+----------
+
+8 - Faça um Programa que leia um vetor de 5 números inteiros e mostre-os.
+9 - Faça um Programa que leia um vetor de 10 números reais e mostre-os na ordem inversa.
+10 - Faça um Programa que leia 4 notas, mostre as notas e a média na tela.
+11 - Faça um Programa que leia um vetor de 10 caracteres, e diga quantas consoantes foram lidas. Imprima as consoantes.
+12 - Faça um Programa que leia 20 números inteiros e armazene-os num vetor. Armazene os números pares no vetor PAR e os números IMPARES no vetor impar. Imprima os três vetores.
