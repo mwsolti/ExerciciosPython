@@ -80,6 +80,94 @@ Resoluções
 
 # cont = 0
 
+
+# # Exercicio 5
+
+# while(True):
+#     nota = float(input("gite uma Nota de 0 a 10: "))
+#     if nota > 10:
+#         print("Valor invalido \n") 
+#     elif nota < 0:
+#         print ("Valor invalido \n")
+#     else:
+#         print ("Valor correto")
+#         break
+
+# Exercicio 6
+# user = input("Digite um usuario: ")
+# txt = "Digite uma senha"
+# cont = 0
+# while(True):
+    
+#     passw = input(txt + ": ")
+#     if user == passw:
+#         cont += 1
+#         print("São iguais \n")
+#         if cont < 2 :
+#             txt += " Novamente"
+#         elif cont > 10:
+#             txt = "Ta de brincadiera né?"
+#     else:
+#         print("Deu boa")
+#         break
+
+# Exercicio 7
+
+def redigite(campo):
+    return input("Digite novamente o(a): " + campo + " \n")
+
+def validacao(qt_letras_nome,idade):
+    if qt_letras_nome <=3:
+        print("Nome muito curto")
+        nome = redigite("Nome")
+        qt_letras_nome = len(nome)
+        validacao(qt_letras_nome,idade)
+    if idade < 0:
+        print("Valor para idade incorreto")
+        idade = int(redigite("Idade"))
+        validacao(qt_letras_nome,idade)
+    elif idade > 150:
+        print("Valor para idade incorreto")
+        idade = int(redigite("Idade"))
+        validacao(qt_letras_nome,idade)
+
+    return
+    
+tps_sexo = "mf"
+tps_est_civ = "scvd"
+
+nome = input("Digite o Nome: ")
+idade = int(input("Digite a Idade: "))
+
+qt_letras_nome = len(nome)
+
+
+validacao(qt_letras_nome,idade)
+
+# sexo = input ("Digite o Sexo: \n"+
+#                 "m - masculino \n" +
+#                 "f - feminino \n")
+# salario = float(input("Digite o Salario: "))
+
+# est_civ = input ("Digite o Estado Civil: \n"+
+#                 "s- solteiroo \n" +
+#                 "c - casado \n"+
+#                 " v - viuvo \n"+
+#                 "d - divorciado \n")
+
+
+
+
+# if salario <=0:
+#     print("Salario invalido")
+
+# if sexo  not in tps_sexo:
+#     print(" Sexo invalido")
+
+# if est_civ not in tps_est_civ:
+#     print ("Estado civil invalido")
+
+
 # for l in letra:
 #     cont += 1
 
