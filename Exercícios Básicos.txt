@@ -111,28 +111,46 @@ Resoluções
 #         print("Deu boa")
 #         break
 
-# Exercicio 7
+
+ Exercicio 7
 
 def redigite(campo):
     return input("Digite novamente o(a): " + campo + " \n")
 
-def validacao(qt_letras_nome,idade):
+def validacao(qt_letras_nome,idade,sexo,salario,est_civ):
     if qt_letras_nome <=3:
         print("Nome muito curto")
         nome = redigite("Nome")
         qt_letras_nome = len(nome)
-        validacao(qt_letras_nome,idade)
+        validacao(qt_letras_nome,idade,sexo,salario,est_civ)
     if idade < 0:
         print("Valor para idade incorreto")
         idade = int(redigite("Idade"))
-        validacao(qt_letras_nome,idade)
+        validacao(qt_letras_nome,idade,sexo,salario,est_civ)
     elif idade > 150:
         print("Valor para idade incorreto")
         idade = int(redigite("Idade"))
-        validacao(qt_letras_nome,idade)
-
+        validacao(qt_letras_nome,idade,sexo,salario,est_civ)
+    if sexo not in tps_sexo:
+       print(" Sexo invalido")
+       sexo = redigite("Sexo \n"+
+                "m - masculino \n" +
+                "f - feminino \n")
+       validacao(qt_letras_nome,idade,sexo,salario,est_civ)
+    if salario <=0:
+        print("Salario invalido")
+        salario = float(redigite("Salario"))
+        validacao(qt_letras_nome,idade,sexo,salario,est_civ)
+    if est_civ not in tps_est_civ:
+        print ("Estado civil invalido")
+        est_civ = redigite("Estado Civil\n"+
+                "s- solteiroo \n" +
+                "c - casado \n"+
+                " v - viuvo \n"+
+                "d - divorciado \n")
+        validacao(qt_letras_nome,idade,sexo,salario,est_civ)
     return
-    
+
 tps_sexo = "mf"
 tps_est_civ = "scvd"
 
@@ -141,44 +159,23 @@ idade = int(input("Digite a Idade: "))
 
 qt_letras_nome = len(nome)
 
+sexo = input ("Digite o Sexo: \n"+
+                "m - masculino \n" +
+                "f - feminino \n")
 
-validacao(qt_letras_nome,idade)
+salario = float(input("Digite o Salario: "))
 
-# sexo = input ("Digite o Sexo: \n"+
-#                 "m - masculino \n" +
-#                 "f - feminino \n")
-# salario = float(input("Digite o Salario: "))
-
-# est_civ = input ("Digite o Estado Civil: \n"+
-#                 "s- solteiroo \n" +
-#                 "c - casado \n"+
-#                 " v - viuvo \n"+
-#                 "d - divorciado \n")
+est_civ = input ("Digite o Estado Civil: \n"+
+                "s- solteiroo \n" +
+                "c - casado \n"+
+                " v - viuvo \n"+
+                "d - divorciado \n")
 
 
+validacao(qt_letras_nome,idade,sexo,salario,est_civ)
 
+nom_sob = nome.split()
 
-# if salario <=0:
-#     print("Salario invalido")
-
-# if sexo  not in tps_sexo:
-#     print(" Sexo invalido")
-
-# if est_civ not in tps_est_civ:
-#     print ("Estado civil invalido")
-
-
-# for l in letra:
-#     cont += 1
-
-# if cont >1:
-#     print("Você Digitou Mais de uMa Letra")
-
-# else:
-#     if (letra not in vogais) and (letra not in n_pode):
-#         print("Letra é uma consoante")
-#     elif (letra  not in cons) and (letra not in n_pode):
-#         print("Letra é uma Vogal")
-#     else:
-#         print("Isto Não é Uma Letra")
+print("Nome: "+ str(nom_sob[0] + "\n"+
+       "Sobrenome: "+ str(nom_sob[1])))
 
