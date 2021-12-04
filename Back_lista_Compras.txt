@@ -1,0 +1,14 @@
+
+BackEnd Lista de Compras
+
+Prerrequisitos Sistema/Tecnicos
+1 – Não Utiliza Classes
+2 – Utilizar Pelo menos 2 Defs(Funções)
+
+Prerrequisito Negocio
+1 -Possuir: Nome do Produto, Quantidade
+2 - Lista não pode ter itens Zerados
+3 -Possuir Validação de itens parecidos 
+	Ex: Se tiver Queijo Marca X e Queijo Marca Y, 
+	informar ao usuário que esta comprando produto similar
+
