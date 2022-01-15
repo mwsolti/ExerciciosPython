@@ -4,7 +4,7 @@ from .models import Usuario
 class UsuarioForm(forms.ModelForm):
     class Meta:
         model = Usuario
-        fields = ["nome", "email", "sexo","idade",'pokemon','outro_pokemon']
+        fields = ["nome", "email", "sexo"]
 
 
         
